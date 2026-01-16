@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*HEADER*/
+.top-header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+.user-actions a {
+    font-size: 20px;
+    color: #00aaff;
+    margin-left: 20px;
+}
+
+.main-nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-nav a {
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #00aaff;
+}
+/*TRANG CHI TIẾT SẢN PHẨM*/
+
+.breadcrumb {
+    padding: 15px 0;
+    color: #666;
+    font-size: 14px;
+}
+.breadcrumb a:hover {
+    color: #00aaff;
+}
+.breadcrumb .current {
+    color: #333;
+    font-weight: 500;
+}
+
+/*Layout phần trên: Ảnh + Thông tin */
+.product-detail-top {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Gallery ảnh bên trái */
+.product-gallery {
+    flex: 2; /* Chiếm 40% */
+}
+.main-image {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.main-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.thumb-list {
+    display: flex;
+    gap: 10px;
+}
+.thumb-item {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+}
+.thumb-item.active {
+    border-color: #00aaff;
+}
+.thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Thông tin bên phải */
+.product-info-side {
+    flex: 3;
+}
+.p-title {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.p-rating-top {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.p-price-box {
+    background: #fcfcfc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.current-price {
+    font-size: 28px;
+    color: #d70018;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.discount-tag {
+    background: #d70018;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    vertical-align: text-top;
+}
+
+/*Specs tóm tắt*/
+.short-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.spec-item {
+    background: #f0f8ff;
+    color: #0056b3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.promo-box {
+    border: 1px dashed #00aaff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 25px;
+    background: #faffff;
+}
+.promo-box h3 {
+    font-size: 15px;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+.promo-box ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.promo-box ul li i {
+    color: #28a745;
+    margin-right: 5px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+.btn-buy {
+    flex: 1;
+    background: #d70018;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+}
+.btn-buy:hover {
+    background: #a90013;
+}
+.btn-buy strong {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.btn-buy span {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.btn-cart {
+    width: 150px;
+    background: #fff;
+    border: 2px solid #00aaff;
+    color: #00aaff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-cart:hover {
+    background: #00aaff;
+    color: white;
+}
+
+/* Phần dưới: Bảng thông số & Mô tả */
+.product-desc-specs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: flex-start;   /* Căn đỉnh trên */
+}
+
+.specs-table {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.specs-table h3, .desc-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.specs-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.specs-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+.specs-table tr td:first-child {
+    font-weight: bold;
+    width: 35%;
+    color: #555;
+    background: #fafafa;
+}
+
+.desc-content {
+    flex: 3;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+.desc-content h4 {
+    margin: 15px 0 10px;
+    color: #00aaff;
+}
+/*FOOTER*/
+footer {
+    background-color: #e0f7fa;
+    padding-top: 40px;
+    border-top: 3px solid #00aaff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer-content .col h3 {
+    color: #007bb5;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+    color: #555;
+    cursor: pointer;
+}
+
+.footer-content p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #b2ebf2;
+    padding: 15px;
+    font-size: 13px;
+    color: #444;
+}

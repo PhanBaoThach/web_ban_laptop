@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lap top</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #f5f5f5;
+        font-size: 14px;
+      }
+      .breadcrumb-box a {
+        text-decoration: none;
+        color: #0d6efd;
+      }
+      .box {
+        background: #fff;
+        border-radius: 10px;
+      }
+      .img {
+        width: 50px;
+        height: 50px;
+        border: #0d6efd solid 1px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .price-new {
+        color: #e30019;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .price-old {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .product-title {
+        font-size: 15px;
+        font-weight: 600;
+      }
+       
+    body {
+      background: #f5f5f5;
+    }
+
+    .card {
+      border-radius: 10px;
+    }
+
+    .btn-order {
+      background: #e02020;
+      color: white;
+      font-weight: bold;
+      padding: 14px;
+      border-radius: 8px;
+    }
+
+    .btn-order:hover {
+      background: #c91c1c;
+      color: #fff;
+    }
+
+    .price {
+      font-weight: 600;
+    }
+
+    .total {
+      font-size: 20px;
+      font-weight: bold;
+      color: red;
+    }
+     .order-summary {
+  position: sticky;
+  top: 20px;
+}
+@media (min-width: 992px) {
+  .order-summary {
+    position: sticky;
+    top: 20px;
+  }
+}
+.top-header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+.user-actions a {
+    font-size: 20px;
+    color: #00aaff;
+    margin-left: 20px;
+}
+
+.main-nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-nav a {
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #00aaff;
+}
+
+footer {
+    background-color: #e0f7fa;
+    padding-top: 40px;
+    border-top: 3px solid #00aaff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer-content .col h3 {
+    color: #007bb5;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+    color: #555;
+    cursor: pointer;
+}
+
+.footer-content p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #b2ebf2;
+    padding: 15px;
+    font-size: 13px;
+    color: #444;
+}
+
+</style>
+  </head>
+  <body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">LapStore</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Bạn tìm gì hôm nay...">
+                </div>
+                <div class="user-actions">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="phukien.html">Phụ kiện</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container my-3">
+      <nav class="breadcrumb-box">
+        <a href="#">Trang chủ</a> / <span>Giỏ hàng</span>
+      </nav>
+      <div class="row">
+        <div class="col-lg-8 mt-3  p-2">
+            <div class="mb-3">
+          <strong>Sản phẩm trong đơn (2)</strong>
+            </div>
+          <div class="d-flex p-2 mb-3 box ">
+            <img
+              class="img"
+              src="assets/image/dell xps.jpg"
+              title="asp dotnet"
+              alt="dell asp dotnet"
+            />
+
+            <div class="ms-3 ">
+
+              <h6 class="product-title">
+                Laptop Dell 15 DC15255 R5 7530U/16GB/15.6" FHD/Win11
+              </h6>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-light text-dark">Màu: Bạc</span>
+              </div>
+
+              <div class="mt-2">
+                    <span class="price-new ">15.990.000đ</span>
+                    <span class="price-old ms-2">16.990.000đ</span>
+                    <span class="ms-5">x2</span>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="bon">
+            <div class="card p-4 mb-4">
+              <h5 class="mb-3">Người đặt hàng</h5>
+
+              <input type="text" class="form-control mb-3" placeholder="Họ và tên">
+              <input type="tel" class="form-control mb-3" placeholder="Số điện thoại">
+              <input type="email" class="form-control mb-3" placeholder="Email (Không bắt buộc)">
+            </div>
+             <div class="card p-4 mb-4">
+        <h5 class="mb-3">Hình thức nhận hàng</h5>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="delivery" checked>
+          <label class="form-check-label">Giao hàng tận nơi</label>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="delivery">
+          <label class="form-check-label">Nhận tại cửa hàng</label>
+        </div>
+
+        <input type="text" class="form-control mb-3" placeholder="Tỉnh / Thành phố, Phường / Xã">
+
+        <textarea class="form-control mb-3" rows="3"
+          placeholder="Ghi chú (Ví dụ: Hãy gọi tôi khi chuẩn bị hàng xong)"></textarea>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label">Nhờ người khác nhận hàng</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label">Yêu cầu hỗ trợ kỹ thuật</label>
+        </div>
+      </div>
+            
+          </div>
+          <div class="card p-4">
+        <h5 class="mb-3">Phương thức thanh toán</h5>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="payment" checked>
+          <label class="form-check-label">Thanh toán khi nhận hàng</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="payment">
+          <label class="form-check-label">Chuyển khoản ngân hàng (QR Code)</label>
+        </div>
+      </div>
+          
+        </div>
+        <div class="col-lg-4 mt-5 p-2">
+          <div class="card p-4 order-summary">
+
+        <h5 class="mb-3">Thông tin đơn hàng</h5>
+
+        <div class="d-flex justify-content-between mb-2">
+          <span>Tổng tiền</span>
+          <span class="price">50.970.000đ</span>
+        </div>
+
+        <div class="d-flex justify-content-between mb-2">
+          <span>Tổng khuyến mãi</span>
+          <span>-3.000.000đ</span>
+        </div>
+
+        <div class="d-flex justify-content-between mb-2">
+          <span>Phí vận chuyển</span>
+          <span>Miễn phí</span>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fw-bold">Cần thanh toán</span>
+          <span class="total">47.970.000đ</span>
+        </div>
+
+        <button class="btn btn-order w-100" onclick="datHang()">Đặt hàng</button>
+
+        <p class="small text-muted mt-3">
+          Bằng việc tiến hành đặt mua hàng, bạn đồng ý với
+          <strong>Điều khoản dịch vụ</strong> và
+          <strong>Chính sách xử lý dữ liệu cá nhân</strong>.
+        </p>
+
+      </div>
+        </div>
+      </div>
+    </div>
+<footer>
+        <div class="container footer-content">
+            <div class="col">
+                <h3>Về LapStore</h3>
+                <p>Chuyên cung cấp laptop chính hãng giá rẻ cho sinh viên.</p>
+            </div>
+            <div class="col">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li>Bảo hành</li>
+                    <li>Đổi trả</li>
+                    <li>Vận chuyển</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Liên hệ</h3>
+                <p>Hotline: 1900 1234</p>
+                <p>Email: hotro@lapstore.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 LapStore. All rights reserved.</p>
+        </div>
+    </footer>
+  </body>
+</html>
